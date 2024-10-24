@@ -30,6 +30,7 @@ Las interfaces (UI) / funcionalidades que se han implementado de acuerdo al dise
 
 7-  Recetas Electronicas
 
+Adicionalmente:
 + Formulario Inicio de Sesion: El formulario de inicio de sesión permite a los usuarios (pacientes y médicos) ingresar sus credenciales para acceder a sus cuentas. 
 Incluye campos para el correo electrónico y la contraseña, y valida que los datos ingresados sean correctos antes de permitir el acceso a la aplicación.
 
@@ -59,12 +60,7 @@ los datos contenidos en el Archivo JSON, dentro de nuestra pagina (BuscarMedicos
 Para verificar lectura archivo JSON se debe utilizar la Aplicación Insomnia, para la lectura de dicho archivo se debe crear una nueva solicitud HTTP con método GET, se debe ingresar URL: http://localhost:8100/medicos.json y al enviar la solicitud, 
 se deberia visualizar nuestro archivo JSON con dicho contenido dentro del archivo, es decir, Nombre Medico, Especialidad, Horario y Calificacion.
 
-
-
-
-
-
-# Propuesta 
+## EP2.3: Definir el modelo de la base de datos. Algunos motores de bases de datos que se pueden utilizar son: MySQL, PostgreSQL, SQLite, MongoDB, Firebase, entre otros. Se deben incluir al menos 3 tablas o documentos. Justificar la selección del tipo de base de datos.
 
 La base de datos que he seleccionado es relacional, el motor de la base de datos ha usar es MySQL 
 
