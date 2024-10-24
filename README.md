@@ -17,11 +17,17 @@ Mi proyecto se centra en una tienda en línea llamada "ShopNow", el cual busca m
 Las interfaces (UI) / funcionalidades que se han implementado de acuerdo al diseño de las __UI Figma__ presentadas con el framework Ionic son: 
 
 1-  Actualizar Informacion Personal
+
 2-  Buscar Medicos
-3-  Gestion Citas
-4-  Gestion Perfil
-5-  Historial Paciente
+
+3-  Gestion de Citas
+
+4-  Gestion de Perfil
+
+5-  Historial del Paciente
+
 6-  Horario Atencion Medicos
+
 7-  Recetas Electronicas
 
 + Formulario Inicio de Sesion: El formulario de inicio de sesión permite a los usuarios (pacientes y médicos) ingresar sus credenciales para acceder a sus cuentas. 
