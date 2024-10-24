@@ -31,6 +31,8 @@ Incluye campos para el correo electrónico y la contraseña, y valida que los da
 correo electrónico, contraseña, region, comuna, también incluye una validación para asegurar que la información ingresada sea correcta y que el usuario 
 acepte los términos y condiciones.
 
+Se debe inicializar el proyecto de Ionic con comando dentro de la terminal (cmd): ionic serve
+
 Para navegar dentro de las distintas funcionalidades se tiene que escribir: http://localhost:8100/funcionalidadRespectiva
 
 Por ejemplo:
@@ -46,8 +48,6 @@ Instrucciones para Lectura de Archivo JSON:
 El archivo medicos.json ubicado en la carpeta public de nuestro Proyecto, lo utilizaremos para la funcionalidad de Busqueda de Medicos, junto con dicho archivo, se deberia visualizar 
 los datos contenidos en el Archivo JSON, dentro de nuestra pagina (BuscarMedicos.tsx), utilizamos funcion fetch para su correcta lectura, además de tomar en cuenta los parametros respectivos dentro del codigo del tsx para que tome en cuenta los datos que contiene dicho JSON.
 
-
-Se debe inicializar el proyecto de Ionic con comando dentro de la terminal (cmd): ionic serve
 
 
 Para verificar lectura archivo JSON se debe utilizar la Aplicación Insomnia, para la lectura de dicho archivo se debe crear una nueva solicitud HTTP con método GET, se debe ingresar URL: http://localhost:8100/medicos.json y al enviar la solicitud, 
