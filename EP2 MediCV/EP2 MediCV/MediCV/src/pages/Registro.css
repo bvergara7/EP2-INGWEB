@@ -1,0 +1,132 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center; 
+}
+  
+.header-container {
+  background-color: #4a90e2;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+  .header-container h1 {
+    color: white;
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .back-button {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    background: transparent;
+  }
+  
+  .tabs {
+    display: flex;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .tabs button {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center; 
+  }
+  
+  .tabs .active {
+    color: #4a90e2;
+    border-bottom: 2px solid #4a90e2;
+    text-align: center; 
+  }
+  
+  .tabs .inactive {
+    color: #888;
+  }
+  
+  .form-container {
+    padding: 20px;
+  }
+  
+  .custom-input,
+  .custom-select {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center; 
+  }
+  
+  .terms-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center; 
+  }
+  
+  .terms-group span {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .register-button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-align: center;
+  }
+  
+ 
+  ion-content {
+    --background: #f4f5f8;
+  }
+  
+  ion-input, ion-select {
+    --padding-start: 10px;
+    --padding-end: 10px;
+    --background: #ffffff;
+     text-align: center; 
+  }
+  
+  ion-checkbox {
+    --size: 20px;
+    --background-checked: #4a90e2;
+    --border-color-checked: #4a90e2;
+
+  }
+  
+  ion-button.register-button {
+    --background: #4a90e2;
+    --background-activated: #4a90e2;
+    --border-radius: 10px;
+  }
+  
+  .error-text {
+    color: #ff4961;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center; 
+  }

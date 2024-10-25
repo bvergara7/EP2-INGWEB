@@ -1,0 +1,109 @@
+.citas-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.citas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007BFF;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.citas-back-button,
+.citas-menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.citas-title {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.citas-list {
+  margin-top: 20px;
+}
+
+.cita-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cita-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cita-fecha h3 {
+  margin: 0;
+}
+
+.cita-fecha p {
+  margin: 0;
+  color: #666;
+}
+
+.cita-doctor h4 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.cita-doctor p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.cita-estado {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-transform: capitalize;
+}
+
+.estado-confirmada {
+  background-color: #28a745;
+  color: white;
+}
+
+.estado-cancelada {
+  background-color: #dc3545;
+  color: white;
+}
+
+.estado-pendiente {
+  background-color: #ffc107;
+  color: white;
+}
+
+.cancel-button {
+  margin-top: 10px;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #0056b3;
+}

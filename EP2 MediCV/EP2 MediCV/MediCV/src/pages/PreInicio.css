@@ -1,0 +1,34 @@
+.app-landing-page {
+    --background: var(--ion-color-primary);
+    color: var(--ion-color-primary-contrast);
+  }
+  
+  .app-toolbar {
+    --background: var(--ion-color-primary);
+  }
+  
+  .app-title {
+    color: var(--ion-color-primary-contrast);
+  }
+  
+  .app-content {
+    --background: var(--ion-color-primary);
+  }
+  
+  .app-content-wrapper {
+    color: var(--ion-color-primary-contrast);
+  }
+  
+  .app-heading,
+  .app-description {
+    color: var(--ion-color-primary-contrast);
+  }
+  
+  .app-login-button {
+    --background: var(--ion-color-primary-contrast);
+    --color: var(--ion-color-primary);
+    --border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+  }

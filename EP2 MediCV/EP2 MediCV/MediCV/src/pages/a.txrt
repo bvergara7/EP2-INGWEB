@@ -1,0 +1,208 @@
+import React, { useState, useEffect } from 'react';
+import { IonPage, IonHeader, IonToolbar, IonIcon, IonContent, IonButton, IonSearchbar } from '@ionic/react';
+import { chevronBackOutline, menuOutline } from 'ionicons/icons';
+import './BuscarMedicos.css';
+
+interface Medico {
+  nombre: string;
+  especialidad: string;
+  calificacion: number;
+}
+
+const BuscarMedicos: React.FC = () => {
+  const [medicos, setMedicos] = useState<Medico[]>([]);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  useEffect(() => {
+    fetch('/medicos.json') 
+      .then(res => res.json())
+      .then(data => setMedicos(data))
+      .catch(err => console.error('Error al cargar el JSON:', err));
+  }, []);
+
+  const especialidades = ['Cardiología', 'Pediatría', 'Dermatología'];
+
+  return (
+    <IonPage>
+      <IonHeader>
+        <IonToolbar>
+          <div className="header-container">
+            <IonIcon icon={chevronBackOutline} slot="start" />
+            <IonIcon icon={menuOutline} slot="end" />
+          </div>
+        </IonToolbar>
+      </IonHeader>
+      
+      <IonContent className="medicos-container">
+        <div className="search-bar">
+          <IonSearchbar
+            value={searchTerm}
+            onIonChange={e => setSearchTerm(e.detail.value!)}
+            placeholder="Buscar Especialidad"
+            className="custom-searchbar"
+          />
+        </div>
+
+        <div className="specialties-container">
+          {especialidades.map((esp, index) => (
+            <div
+              key={index}
+              className={`specialty-pill ${index === 0 ? 'active' : ''}`}
+            >
+              {esp}
+            </div>
+          ))}
+        </div>
+
+        <div className="doctor-list">
+          {medicos.length > 0 ? (
+            medicos.map((medico, index) => (
+              <div key={index} className="doctor-card">
+                <div className="doctor-info">
+                  <h3>{medico.nombre}</h3>
+                  <p>{medico.especialidad}</p>
+                </div>
+                <div className="doctor-rating">
+                  <span>★ {medico.calificacion || 'N/A'}</span>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p className="no-results">No se encontraron médicos</p>
+          )}
+        </div>
+        
+        <div className="advanced-filters-container">
+          <IonButton expand="block" className="advanced-filters-button">
+            Filtros Avanzados
+          </IonButton>
+        </div>
+      </IonContent>
+    </IonPage>
+  );
+};
+
+export default BuscarMedicos;
+
+
+
+
+
+
+
+.medicos-container {
+  --background: #f4f5f8;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #4a90e2;
+  color: white;
+}
+
+.search-bar {
+  padding: 10px;
+  background-color: #4a90e2;
+}
+
+.custom-searchbar {
+  --background: #ffffff;
+  --border-radius: 20px;
+  --box-shadow: none;
+  --placeholder-color: #888;
+  --icon-color: #888;
+  margin-bottom: 15px;
+}
+
+.specialties-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 0 10px 15px;
+  background-color: #4a90e2;
+}
+
+.specialty-pill {
+  background-color: #ffffff;
+  color: #4a90e2;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-right: 10px;
+  white-space: nowrap;
+  font-size: 14px;
+}
+
+.specialty-pill.active {
+  background-color: #3a7cc7;
+  color: #ffffff;
+}
+
+.doctor-list {
+  padding: 10px;
+}
+
+.doctor-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-info {
+  text-align: center;
+}
+
+.doctor-info h3 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.doctor-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.doctor-rating {
+  font-size: 14px;
+  color: #4a90e2;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.no-results {
+  text-align: center;
+  color: #666;
+  padding: 20px;
+}
+
+.advanced-filters-container {
+  padding: 10px;
+  position: sticky;
+  bottom: 0;
+  background-color: #f4f5f8;
+}
+
+.advanced-filters-button {
+  --background: #ffffff;
+  --color: #333333;
+  --border-radius: 5px;
+  font-weight: normal;
+}
+
+ion-icon {
+  font-size: 24px;
+  color: white;
+}
+
+ion-content {
+  --padding-top: 0px;
+}

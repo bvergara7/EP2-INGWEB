@@ -1,0 +1,15 @@
+
+[
+  { 
+    "nombre": "Dr. Juan Pérez", 
+    "especialidad": "Cardiología", 
+    "horario": "Lunes a Viernes: 9:00 - 18:00",
+    "calificacion": 4.5
+  },
+  { 
+    "nombre": "Dra. Ana López", 
+    "especialidad": "Dermatología", 
+    "horario": "Martes y Jueves: 10:00 - 16:00",
+    "calificacion": 4.8
+  }   
+]

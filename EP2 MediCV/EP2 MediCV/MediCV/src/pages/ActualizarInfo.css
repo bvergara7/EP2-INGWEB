@@ -1,0 +1,81 @@
+.info-container {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center; 
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007BFF;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.info-back-button,
+.info-menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.info-title {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  flex-grow: 1;
+  margin: 0;
+}
+
+/* Formulario */
+.info-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+/* Etiquetas */
+.info-label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Campos de entrada y textarea */
+.info-input,
+.info-textarea {
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+
+.info-textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Botón de guardar */
+.info-save-button {
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+.info-save-button:hover {
+  background-color: #0056b3;
+}

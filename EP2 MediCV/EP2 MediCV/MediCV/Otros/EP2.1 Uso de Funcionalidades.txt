@@ -1,0 +1,33 @@
+
+EP2.1: Implementacion de 7 mockups UI en el framework Ionic. Adicional los dos formularios de inicio de sesion y registro.
+
+
+
+
+1-  Actualizar Informacion Personal
+2-  Buscar Medicos
+3-  Gestion Citas
+4-  Gestion Perfil
+5-  Historial Paciente
+6-  Horario Atencion Medicos
+7-  Recetas Electronicas
+
++ Formulario Inicio de Sesion: El formulario de inicio de sesión permite a los usuarios (pacientes y médicos) ingresar sus credenciales para acceder a sus cuentas. 
+Incluye campos para el correo electrónico y la contraseña, y valida que los datos ingresados sean correctos antes de permitir el acceso a la aplicación.
+
++ Formulario Registrarse: El formulario de registro permite a nuevos usuarios crear una cuenta en la aplicación. Requiere información básica como nombre completo, 
+correo electrónico, contraseña, region, comuna, también incluye una validación para asegurar que la información ingresada sea correcta y que el usuario 
+acepte los términos y condiciones.
+
+
+
+
+
+
+Para navegar dentro de las distintas funcionalidades se tiene que escribir: http://localhost:8100/funcionalidadRespectiva
+
+Por ejemplo:
+
+Deseo ir al formulario de Inicio de Sesion, http://localhost:8100/InicioSesion
+
+En el TSX de App (App.tsx), aparece todas las rutas respectivas a las funcionalidades del problema.

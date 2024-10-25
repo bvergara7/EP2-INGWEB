@@ -1,0 +1,32 @@
+EP 2.4: Patrones de Diseños
+
+
+
+En nuestro proyecto, hemos implementado dos patrones de diseño móvil que mejoran la experiencia de usuario y la navegación en nuestra aplicación, 
+especialmente en dispositivos móviles.
+
+- Tab Bar/Pestañas: Uno de los patrones clave utilizados es el Tab Bar, presente en la funcionalidad de Registro de Usuario (Registro.tsx). 
+El Tab Bar permite alternar entre "Iniciar Sesión" y "Registro", lo que proporciona una navegación clara y directa entre estas dos funcionalidades principales. 
+Este patrón de diseño es muy útil para filtrar el contenido, además de mejorar la experiencia del usuario al proporcionar una interfaz limpia y organizada. 
+Facilitaria el acceso rápido a estas dos opciones, lo cual es especialmente importante en dispositivos móviles, donde el espacio es limitado y se busca una navegación intuitiva 
+y eficaz.
+
+
+- Navegacion Historica: El segundo patrón que hemos implementado es el de Navegación Histórica, que permite al usuario retroceder a pantallas anteriores 
+manteniendo el flujo de navegación coherente. Este patrón está presente en varias partes de la aplicación, 
+como en la funcionalidad Buscar Médicos (BuscarMedicos.tsx).
+De la misma manera, en el Formulario de Registro (Registro.tsx), cuando el usuario hace clic para regresar, 
+es redirigido a la pantalla de inicio de sesión, proporcionando una experiencia de navegación intuitiva. 
+Este patrón asegura que los usuarios puedan desplazarse entre las diferentes pantallas de forma fluida y sin interrupciones, manteniendo el contexto de su acción anterior.
+
+
+
+
+Estos dos patrones han sido seleccionados estratégicamente para optimizar el uso desde un dispositivo móvil, 
+donde la simplicidad y la eficiencia en la navegación son esenciales para una experiencia de usuario positiva.
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+.info-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007BFF;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+}
+
+.info-back-button,
+.info-menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+.info-title {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  flex-grow: 1;
+  margin: 0;
+}
+
+.patient-info {
+  background-color: #eaeaea;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.patient-info p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.records {
+  background-color: #eaeaea;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.records p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.records p:first-child {
+  font-weight: 500;
+}
+
+.info-save-button {
+  background-color: #007BFF;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+}
+
+.info-save-button:hover {
+  background-color: #0056b3;
+}

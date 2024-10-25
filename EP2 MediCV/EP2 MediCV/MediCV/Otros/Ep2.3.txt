@@ -1,0 +1,33 @@
+EP2.3: Definir ell modelo de la base de datos. Algunos motores de bases
+de datos que se pueden utilizar son: MySQL, PostgreSQL, SQLite,
+MongoDB, Firebase, entre otros. Se deben incluir al menos 3 tablas
+o documentos. Justificar la selección del tipo de base de datos.
+
+
+Base de datos Modelo/Motor y Justificacion:
+
+
+Posible Nombre Base de Dato: medicv
+
+
+
+
+Tablas BD:
+
+La base de datos consta de tres tablas: Usuario, Medico y Cita. 
+
+- La tabla usuario almacena la información del usuario, incluyendo un ID único, correo electrónico, contraseña y estado de actividad. 
+
+- La tabla medico contiene los datos de los médicos, como su ID, nombre, especialidad, calificación y horario de atención. 
+
+- Finalmente, la tabla cita registra las citas programadas, vinculando a los usuarios y médicos a través de sus ID, y almacena la fecha, hora y estado de la cita.
+
+
+Nuestra eleccion de motor de Base de datos es MYSQL con una base de datos relacional, debido a su capacidad de manejar datos estructurados, facilidad a la hora de crear tablas,
+además que dicho motor garantiza la integridad en el uso de claves y demas acciones realizadas. Permite realizar consultas complejas, asegurando un manejo eficaz 
+en las relaciones entrelas tablas involucradas, lo cual consideramos, algo de suma importancia para nuestra propuesta de App de Gestion/Atencion Medica, 
+la robustez, escabalabilidad y facilidad a la hora de utilizar el motor de MYSQL, por lo cual 
+lo consideramos como gran opción para el desarrollo de nuestro trabajo, por lo cual, lo elegimos para nuestro modelo.
+
+
+Además incluimos un sql de nuestra base de datos que nos va a servir de base para luego trabajarla en la Entrega Final en terminos de Backend.

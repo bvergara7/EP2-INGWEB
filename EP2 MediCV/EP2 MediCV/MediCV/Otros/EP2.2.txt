@@ -1,0 +1,15 @@
+EP2.2  Hacer lectura de datos desde un archivo JSON (puede ser local, o alguna fuente externa de datos), y mostrarlos en alguna de las pantallas.
+
+
+Instrucciones para Lectura de Archivo JSON:
+
+El archivo Medicos.Json ubicado en la carpeta public de nuestro Proyecto, lo utilizaremos para la pagina de Busqueda de Medicos, junto con dicho archivo, se deberia visualizar 
+los datos contenidos en el Archivo JSON, dentro de nuestra pagina (BuscarMedicos.tsx) 
+
+
+Se debe inicializar el proyecto de Ionic con comando dentro de la terminal (cmd): ionic serve
+
+
+Para verificar archivo JSON se debe utilizar la Aplicación Insomnia, para la lectura de dicho archivo se debe crear una nueva solicitud HTTP con método GET, se debe ingresar URL: http://localhost:8100/medicos.json y al enviar la solicitud, 
+se deberia visualizar nuestro archivo JSON con dicho contenido dentro del archivo, es decir, Nombre Medico, Especialidad, Horario y Calificacion.
+
