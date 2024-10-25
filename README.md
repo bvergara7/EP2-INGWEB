@@ -87,7 +87,7 @@ lo consideramos como gran opción para el desarrollo de nuestro trabajo, por lo 
 
 Además incluimos un sql de nuestra base de datos (en carpeta Otros dentro del proyecto) que nos va a servir de base para luego trabajarla en la Entrega Final en terminos de Backend.
 
-[Modelo MER de la BD](EP2/DB.png)
+[Modelo MER de la BD](MediCV/Otros/MER MEDICV BD.png)
 
 
 
