@@ -46,7 +46,7 @@ Por ejemplo:
 
 Deseo ir al formulario de Inicio de Sesion, http://localhost:8100/InicioSesion
 
-En el TSX de App (App.tsx), aparece todas las rutas respectivas a las funcionalidades del problema.
+En el TSX de App (App.tsx), aparece todas las rutas respectivas a las funcionalidades de nuestro Proyecto.
 
 ## EP2.2: Hacer lectura de datos desde un archivo JSON (puede ser local, o alguna fuente externa de datos), y mostrarlos en alguna de las pantallas.
 
