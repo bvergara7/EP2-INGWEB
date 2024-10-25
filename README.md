@@ -2,6 +2,10 @@
 ##  Repositorio de Entrega Parcial 2 de Ingenieria Web PUCV (INF 3245)
 ## Integrantes: Benjamín Vergara, Luka Jacob
 
+
+## Propuesta (9): Una aplicación web médico para consultorías, hospitales privadores, que ayude a la atención de pacientes, y la carga de trabajo. 
+## Nombre Proyecto: MediCV
+
 # Entregables
 - - EP 2.1 :  Implementación de 7 mockups UI en el framework Ionic. Adi-
 cional los dos formularios de inicio de sesión y registro.
